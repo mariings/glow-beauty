@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow & Beauty Aesthetics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Praise&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="Glow.png" type="image/png">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Glow & Beauty</div>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1 class="glow-head pop">Glow & Beauty Aesthetics</h1>
+    <p class="slide-left">Your trusted partner in skincare, wellness, and confidence</p>
+    <a href="#contact" class="btn pop">Book Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p >We specialize in skincare, depilation, and lip enhancement treatments to help you look and feel your best. <br>With certified professionals and safe procedures, we ensure your beauty and confidence shine through.</p>
+  </section>
+
+  <!-- Services Section -->
+ <section id="services">
+    <h2 style="text-align: center;">Our Services</h2>
+    <div class="services">
+      <div class="service-card slide-left">
+        <img src="Skincare-bro.png" alt="Skincare">
+        <h3>Skincare Treatments</h3>
+        <p>Rejuvenating facials and skin therapies tailored to your needs.</p>
+      </div>
+
+      <div class="service-card pop-up">
+        <img src="Depilation-bro.png" alt="Depilation">
+        <h3>Depilation</h3>
+        <p>Smooth and painless hair removal solutions for all skin types.</p>
+      </div>
+
+      <div class="service-card slide-right">
+        <img src="Lip filler-amico.png" alt="Lip Filler">
+        <h3>Lip Enhancement</h3>
+        <p>Safe and natural-looking lip filler treatments to enhance your smile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card slide-left">
+        <img src="hydrating.jpg" alt="Product 1">
+        <h3>Hydrating Cream</h3>
+        <p>Nourishes and hydrates your skin for a natural glow.</p>
+      </div>
+      <div class="product-card pop">
+        <img src="serum.png" alt="Product 2">
+        <h3>Brightening Serum</h3>
+        <p>Reduces dark spots and brightens your complexion.</p>
+      </div>
+      <div class="product-card pop">
+        <img src="toner.png" alt="Product 3">
+        <h3>Soothing Toner</h3>
+        <p>Calms sensitive skin and restores balance.</p>
+      </div>
+      <div class="product-card slide-right">
+        <img src="sun.png" alt="Product 4">
+        <h3>SPF 50 Sunscreen</h3>
+        <p>Protects your skin from harmful UV rays daily.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="why-container">
+      <div class="why-card slide-left">
+        <i class="fas fa-user-md"></i>
+        <h3>Certified Experts</h3>
+        <p>Our team is composed of certified professionals with years of experience.</p>
+      </div>
+      <div class="why-card pop">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Safe Procedures</h3>
+        <p>We follow international safety standards to ensure your wellness.</p>
+      </div>
+      <div class="why-card slide-right">
+        <i class="fas fa-heart"></i>
+        <h3>Customer Care</h3>
+        <p>Your satisfaction and comfort are always our top priorities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Di Mahanap Street</p>
+        <p><i class="fas fa-phone"></i> +63 912 345 6789</p>
+        <p><i class="fas fa-envelope"></i> hello@business.com</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:hello@yourbusiness.com" class="btn">Send an Inquiry</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Glow & Beauty Aesthetics | All Rights Reserved</p>
+  </footer>
+
+
+
+
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navlinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navlinks.classList.toggle("active");
+    menuToggle.innerHTML = navlinks.classList.contains("active")
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+</script>
+<script>
+  const navLinks = document.querySelectorAll(".nav-links a");
+  
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // find the target section
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        // find all animated elements inside that section
+        const animElements = targetSection.querySelectorAll(
+          ".pop, .slide-left, .slide-right, .slideTop, .slideBottom, .pop-up"
+        );
+
+        animElements.forEach(el => {
+          el.style.animation = "none"; // reset animation
+          void el.offsetWidth;        // force reflow (restart trick)
+          el.style.animation = "";    // re-apply animation from CSS
+        });
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
